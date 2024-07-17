@@ -13,7 +13,7 @@ const App = () => {
 
   const fetchAppointments = async () => {
     try {
-      const response = await axios.get('http://localhost:9000/api/appointments');
+      const response = await axios.get('https://appointmentdashboard.onrender.com/api/appointments');
       setAppointments(response.data);
     } catch (error) {
       console.error('Error fetching appointments:', error);
@@ -27,7 +27,7 @@ const App = () => {
   const handleAppointmentSelect = async (appointment) => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:9000/api/appointments/${appointment._id}`);
+      const response = await axios.get(`https://appointmentdashboard.onrender.com/api/appointments/${appointment._id}`);
       setSelectedAppointment(response.data);
     } catch (error) {
       console.error('Error fetching appointment details:', error);
