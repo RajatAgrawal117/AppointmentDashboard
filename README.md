@@ -1,49 +1,65 @@
 # AppointmentDashboard
-This project consists of a full-stack application for managing appointments. It includes a React frontend and a Node.js backend.
-You can find the deployed live website here: https://appointment-dashboard-3mn7q68yo.vercel.app/
+
+This full-stack application manages appointments, featuring a React frontend and a Node.js backend.
+
+Live demo: [Appointment Dashboard](https://appointment-dashboard-3mn7q68yo.vercel.app/)
+
+## Project Structure
+
+- `appointment-dashboard/`: Frontend React application
+- `appointment-dashboard-backend/`: Backend Node.js server
+
 ## Frontend (appointment-dashboard)
 
-The frontend is built with React and includes components for adding appointments, displaying appointment details, and a sidebar.
+The React frontend includes components for adding appointments, displaying appointment details, and a sidebar.
 
-## Running locally:
-``` git clone https://github.com/RajatAgrawal117/AppointmentDashboard.git ```
+### Running Locally
 
-### Setup and Running
+1. Clone the repository:
+   git clone https://github.com/RajatAgrawal117/AppointmentDashboard.git
 
-1. Navigate to the `appointment-dashboard` directory:
-``` cd appointment-dashboard ```
+2. Navigate to the frontend directory:
+   cd AppointmentDashboard/appointment-dashboard
 
-2. Install dependencies:
+3. Install dependencies:
+   npm install
 
-```
-npm install 
-```
-3. Start the development server:
-``` npm run start ```
+4. Start the development server:
+   npm run start
+
+The app will be available at `http://localhost:3000`.
 
 ## Backend (appointment-dashboard-backend)
 
-The backend is built with Node.js and includes controllers, models, and routes for managing appointments.
+The Node.js backend uses Express and includes controllers, models, and routes for managing appointments.
 
 ### Setup and Running
 
-1. Navigate to the `appointment-dashboard-backend` directory.
+1. Navigate to the backend directory:
+   cd AppointmentDashboard/appointment-dashboard-backend
+
 2. Install dependencies:
-```
-npm install 
-```
-3. Set up your environment variables in the `.env` file.
+   npm install
+
+3. Set up environment variables:
+   - Create a `.env` file in the root of the backend directory
+   - Add your MongoDB connection URL:
+     MONGODB_URI=your_mongodb_connection_string
+
 4. Start the server:
-``` node index.js ```
+   node index.js
+
+The server will start on the port specified in your environment variables (default: 3000).
 
 ## Features
 
 - Add new appointments
 - View appointment details
-- Manage appointments through a user-friendly interface
+- Manage appointments through an intuitive interface
 
 ## Technologies Used
 
 - Frontend: React
 - Backend: Node.js, Express
 - Database: MongoDB
+
