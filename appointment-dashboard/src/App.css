@@ -1,0 +1,89 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+header {
+  background-color: #3c3c3c;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.left-panel {
+  width: 50%;
+  padding: 20px;
+  border-right: 1px solid #3c3c3c;
+}
+
+.right-panel {
+  width: 50%;
+  padding: 20px;
+}
+
+.appointment-form {
+  background-color: #2d2d2d;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #3c3c3c;
+  border: none;
+  color: white;
+}
+
+.appointment-form button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #3c3c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.appointment-details {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 5px;
+}
+.appointment-form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #3c3c3c;
+  border: none;
+  color: white;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+}
