@@ -10,7 +10,7 @@ const port = process.env.PORT || 9000;
 // Middleware
 app.use(bodyParser.json());
 const corsOptions = {
-    origin: "https://appointment-dashboard-six.vercel.app/", // Replace with your frontend URL
+    origin: "*", // Replace with your frontend URL
     credentials: true,
     optionsSuccessStatus: 200
 };
