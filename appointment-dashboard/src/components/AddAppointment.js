@@ -39,7 +39,7 @@ const AddAppointment = ({ fetchAppointments }) => {
   useEffect(() => {
     const fetchBookedTimes = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/api/appointments');
+        const response = await axios.get('https://appointmentdashboard.onrender.com/api/appointments');
         const booked = response.data.map(appointment => appointment.time);
         setBookedTimes(booked);
       } catch (error) {
@@ -56,7 +56,7 @@ const AddAppointment = ({ fetchAppointments }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:9000/api/appointments/", appointment);
+      await axios.post("https://appointmentdashboard.onrender.com/api/appointments/", appointment);
       fetchAppointments();
       toast.success("Appointment booking successful!");
       setAppointment({
